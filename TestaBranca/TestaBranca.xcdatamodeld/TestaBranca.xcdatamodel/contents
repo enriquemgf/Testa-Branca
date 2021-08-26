@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Categoria" representedClassName=".Categoria" syncable="YES">
+        <attribute name="imagem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uso" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="palavras" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Palavra" syncable="YES"/>
+    </entity>
+    <entity name="Palavra" representedClassName=".Palavra" syncable="YES">
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Resultado" representedClassName=".Resultado" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="jogador" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pontuacao" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Categoria" positionX="-216" positionY="17" width="128" height="103"/>
+        <element name="Palavra" positionX="-20" positionY="153" width="128" height="58"/>
+        <element name="Resultado" positionX="79" positionY="11" width="128" height="88"/>
+    </elements>
+</model>
